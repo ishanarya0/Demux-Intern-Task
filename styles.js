@@ -4,9 +4,12 @@ export const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 10,
     paddingVertical: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 15
   },
   title: {
-    fontSize: 26,
+    fontSize: 30,
     fontWeight: '600',
   },
   list: {

@@ -2,13 +2,19 @@ import styles from './styles';
 import { fetchResults } from './data';
 import React, { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import { FlatList, View, Text, SafeAreaView } from 'react-native';
+import { FlatList, View, Text, SafeAreaView, TouchableOpacity, Image, StyleSheet} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import CardComponent from './components/CardComponent';
+import { BlurView } from 'expo-blur';
+import FilterComponent from './components/FilterComponent';
 import delay from 'delay';
 
 export default function App () {
+  const icons = {
+    filter_btn: require('./assets/filter3.png'),
+  };
 
+  const [isFilter, setisFilter] = useState(false);
   const dispatch = useDispatch();
   const listItems = useSelector(state => state.list.items);
   const totalItems = Array.isArray(listItems) ? listItems.length : 0;
@@ -109,6 +115,13 @@ export default function App () {
         ListHeaderComponent={
           <View style={styles.header}>
             <Text style={styles.title}>Displaying {totalItems} Items</Text>
+            <TouchableOpacity onPress={() => setisFilter(true)}>
+              <Image style={{
+                height: 50,
+                width: 50,
+                alignSelf: 'center',
+                }} source={icons.filter_btn} />
+            </TouchableOpacity>
           </View>
         }
         ListFooterComponent={
@@ -143,6 +156,15 @@ export default function App () {
           )
         }}
       />
+      {isFilter && (
+        <BlurView
+          intensity={100}
+          style={[StyleSheet.absoluteFill, { justifyContent: 'center' }]}
+          tint="dark"
+        >
+          <FilterComponent isFilter={isFilter} setisFilter={setisFilter} />
+        </BlurView>
+      )}
     </SafeAreaView>
   );
 }
