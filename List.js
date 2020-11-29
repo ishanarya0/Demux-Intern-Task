@@ -8,6 +8,7 @@ import CardComponent from './components/CardComponent';
 import { BlurView } from 'expo-blur';
 import FilterComponent from './components/FilterComponent';
 import delay from 'delay';
+import {fetchFilter, updateFilter} from './reducers/filter/filterActions'
 
 export default function App () {
   const icons = {
@@ -17,6 +18,7 @@ export default function App () {
   const [isFilter, setisFilter] = useState(false);
   const dispatch = useDispatch();
   const listItems = useSelector(state => state.list.items);
+  const filters = useSelector(state => state.filter);
   const totalItems = Array.isArray(listItems) ? listItems.length : 0;
   const [loadingMore, setLoadingMore] = useState(false);
   const [allLoaded, setAllLoaded] = useState(false);
@@ -24,8 +26,9 @@ export default function App () {
 
   useEffect(() => {
     initialiseList();
+    dispatch(fetchFilter());
+    //dispatch(updateFilter(company,topic, typeJob, college, nature));
   }, []);
-
 
   const initialiseList = async () => {
 
@@ -54,7 +57,6 @@ export default function App () {
     });
   }
 
-
   const persistResults = async (newItems) => {
 
     // get current persisted list items
@@ -80,7 +82,6 @@ export default function App () {
     });
   }
 
-
   const loadMoreResults = async info => {
 
     // if already loading more, or all loaded, return
@@ -101,9 +102,9 @@ export default function App () {
       setAllLoaded(true);
     } else {
       // process the newly fetched items
+      dispatch(updateFilter(company,topic, typeJob, college, nature));
       await persistResults(newItems);
     }
-
     // load more complete, set loading more to false
     setLoadingMore(false);
   }

@@ -2,6 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import ChipComponent from './ChipComponent';
+import PickerComponent from './PickerComponent';
+import{natureOfJob, typeOfInterview, college, company} from '../constantValues/FilterComponentConfig';
+
 const Modal = () => {
   return (
     <View>
@@ -10,8 +13,23 @@ const Modal = () => {
         style={styles.modal}
       >
         <Text style={[styles.text, { paddingTop: 16 }]}>Filter By</Text>
-        <View style={styles.chips}>
-          <ChipComponent />
+        <View style={{ flexDirection: 'row', justifyContent:'flex-start', flexWrap:'wrap' }}>
+          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
+            <Text style={{color:'white'}} >Job type</Text>
+            <PickerComponent pickerValues={natureOfJob} />
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
+            <Text style={{color:'white'}} >Interview</Text>
+            <PickerComponent pickerValues={typeOfInterview} />
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
+            <Text style={{color:'white'}} >Company</Text>
+            <PickerComponent pickerValues={company} />
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
+            <Text style={{color:'white'}} >College</Text>
+            <PickerComponent pickerValues={college} />
+          </View>
         </View>
       </LinearGradient>
     </View>
