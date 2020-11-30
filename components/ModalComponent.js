@@ -1,11 +1,14 @@
 import React, { useState} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import {items} from '../constantValues/FilterComponentConfig';
 import { useDispatch } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import SectionedMultiSelect from 'react-native-sectioned-multi-select';
-import {updateFilter} from '../reducers/filter/filterActions'
+import {updateFilter} from '../reducers/filter/filterActions';
+
+const SCREEN_HEIGHT = Math.round(Dimensions.get('window').height);
+const SCREEN_WIDTH = Math.round(Dimensions.get('window').width);
 
 const Modal = () => {
   const dispatch = useDispatch();
@@ -71,8 +74,9 @@ export default Modal;
 
 const styles = StyleSheet.create({
   modal: {
+    minHeight : SCREEN_HEIGHT * 0.15,
     height: 'auto',
-    minWidth: 300,
+    minWidth: SCREEN_WIDTH * 0.7,
     width: 'auto',
     marginRight: 25 / 5,
     borderRadius: 6,

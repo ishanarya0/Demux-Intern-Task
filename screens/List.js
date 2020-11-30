@@ -2,7 +2,7 @@ import styles from '../styles';
 import { fetchResults,fetchResultsFilter } from '../data';
 import React, { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import { Button,FlatList, View, Text, SafeAreaView, TouchableOpacity, Image, StyleSheet} from 'react-native';
+import { Button,FlatList, View, Text, SafeAreaView, TouchableOpacity, Image, StyleSheet, Dimensions} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import CardComponent from '../components/CardComponent';
 import { BlurView } from 'expo-blur';
@@ -10,6 +10,10 @@ import FilterComponent from '../components/FilterComponent';
 import delay from 'delay';
 import {updateFilter} from '../reducers/filter/filterActions';
 import { useNavigation } from '@react-navigation/native';
+
+//const SCREEN_HEIGHT = Math.round(Dimensions.get('window').height);
+const SCREEN_WIDTH = Math.round(Dimensions.get('window').width);
+
 
 export default function listFun () {
   const icons = {
@@ -141,7 +145,7 @@ const persistResults = async (newItems) => {
             </View>}
             {!filterUse && <Image style={{
               height: 50,
-              width: 300,
+              width: SCREEN_WIDTH * 0.7,
             }}
               source={icons.header}
             />}

@@ -1,7 +1,13 @@
 import React from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
+import { View, Image, Text, StyleSheet, Dimensions } from 'react-native';
+
+const SCREEN_HEIGHT = Math.round(Dimensions.get('window').height);
+const SCREEN_WIDTH = Math.round(Dimensions.get('window').width);
 
 const CardComponent = ({ result }) => {
+  
+
+
   const icons = {
     star_100: require('../assets/rating_star_100.png'),
     star_0: require('../assets/rating_star_0.png'),
@@ -72,9 +78,9 @@ const CardComponent = ({ result }) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginLeft: 15,
-    width: 350,
-    height: 100,
+    marginHorizontal: 15,
+    width: SCREEN_WIDTH * 0.85 ,
+    height: SCREEN_HEIGHT / 6,
   },
   titleStyle: {
     fontSize: 20,
