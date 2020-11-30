@@ -6,6 +6,9 @@ import { Provider } from 'react-redux';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
+import QuestionsScreenStack from './components/screenNavigator';
+
 export default function App () {
 
   const store = createStore(rootReducer);
@@ -14,7 +17,9 @@ export default function App () {
     <Provider store={store}>
       <StatusBar style="auto" />
       <SafeAreaView style={{ flex: 1 }}>
-        <List />
+      <NavigationContainer>
+        <QuestionsScreenStack />
+      </NavigationContainer>
       </SafeAreaView>
     </Provider>
   );

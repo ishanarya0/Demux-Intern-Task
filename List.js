@@ -8,9 +8,10 @@ import CardComponent from './components/CardComponent';
 import { BlurView } from 'expo-blur';
 import FilterComponent from './components/FilterComponent';
 import delay from 'delay';
-import {fetchFilter, updateFilter} from './reducers/filter/filterActions'
+import {fetchFilter, updateFilter} from './reducers/filter/filterActions';
+import { useNavigation } from '@react-navigation/native';
 
-export default function App () {
+export default function listFun () {
   const icons = {
     filter_btn: require('./assets/filter3.png'),
   };
@@ -23,7 +24,7 @@ export default function App () {
   const [totalItemsFilter, setTotalFilter] = useState(0);
   const [loadingMore, setLoadingMore] = useState(false);
   const [allLoaded, setAllLoaded] = useState(false);
-
+  const navigation = useNavigation();
   const [filterUse, setFilterUse] = useState(false);
 
   useEffect(() => {
@@ -175,6 +176,9 @@ const initialiseListFiltered = async () => {
         keyExtractor={(item) => "item_" + item._id}
         renderItem={({ item, index }) => {
           return (
+            <TouchableOpacity
+            onPress={() => navigation.navigate('Question Details', {item : item})}
+          >
             <React.Fragment key={index}>
               <View style={styles.item}>
               <CardComponent
@@ -188,6 +192,7 @@ const initialiseListFiltered = async () => {
             />
               </View>
             </React.Fragment>
+            </TouchableOpacity>
           )
         }}
       />
