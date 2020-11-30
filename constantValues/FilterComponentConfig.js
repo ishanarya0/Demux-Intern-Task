@@ -1,141 +1,112 @@
-export const natureOfJob = [
+export const items = [ 
   {
-    "key": 0,
-    "label": "None",
-    "value": "none"
+    name: "natureOfJob",
+    id: 0,
+    children:  [
+      {
+        "id": 1,
+        "name": "Internship"
+      },
+      {
+        "id": 2,
+        "name": "Full Time"
+      },
+      {
+        "id": 3,
+        "name": "Part Time"
+      },
+    ]
   },
   {
-    "key": 1,
-    "label": "Internship",
-    "value": "intership"
+    name: "typeOfInterview",
+    id: 4,
+    children: [
+      {
+        "id": 5,
+        "name": "Online Test"
+      },
+      {
+        "id": 6,
+        "name": "Personal Interview"
+      }
+    ]
   },
   {
-    "key": 2,
-    "label": "Full Time",
-    "value": "fulltime"
+    name: "college",
+    id: 7,
+    children: [
+      {
+        "id": 8,
+        "name": "SRMS"
+      },
+      {
+        "id": 9,
+        "name": "IIIT, Guwahati"
+      },
+      {
+        "id": 10,
+        "name": "IIT, Delhi"
+      },
+      {
+        "id": 11,
+        "name": "IIT, BHU"
+      },
+      {
+        "id": 12,
+        "name": "IIIT, Una"
+      },
+      {
+        "id": 13,
+        "name": "IIIT, Hyderabad"
+      },
+      {
+        "id": 14,
+        "name": "NIT, Hamirpur"
+      }
+    ]
   },
-  {
-    "key": 3,
-    "label": "Part Time",
-    "value": "parttime"
-  },
-];
 
-export const typeOfInterview = [
   {
-    "key": 0,
-    "label": "None",
-    "value": "none"
-  },
-  {
-    "key": 1,
-    "label": "Online",
-    "value": "online"
-  },
-  {
-    "key": 2,
-    "label": "Personal Test",
-    "value": "personaltest"
+    name: "company",
+    id: 15,
+    children: [
+      {
+        "id": 16,
+        "name": "DeMux"
+      },
+      {
+        "id": 17,
+        "name": "Microsoft"
+      },
+      {
+        "id": 18,
+        "name": "PayPal"
+      },
+      {
+        "id": 19,
+        "name": "Jio"
+      },
+      {
+        "id": 20,
+        "name": "Adobe"
+      },
+      {
+        "id": 21,
+        "name": "Xebia"
+      },
+      {
+        "id": 22,
+        "name": "Morgan Stanley"
+      },
+      {
+        "id": 23,
+        "name": "Facebook"
+      },
+      {
+        "id": 24,
+        "name": "Google"
+      }
+    ]
   }
-];
+]
 
-export const college = [
-  {
-    "key": 0,
-    "label": "None",
-    "value": "none"
-  },
-  {
-    "key": 1,
-    "label": "IIIT, Guwahati",
-    "value": "iiitg"
-  },
-  {
-    "key": 2,
-    "label": "IIT, Delhi",
-    "value": "iitd"
-  },
-  {
-    "key": 3,
-    "label": "IIT, BHU",
-    "value": "iitbhu"
-  },
-  {
-    "key": 4,
-    "label": "IIIT, Una",
-    "value": "iiitu"
-  },
-  {
-    "key": 5,
-    "label": "IIIT, Hyderabad",
-    "value": "iiith"
-  },
-  {
-    "key": 6,
-    "label": "NIT, Hamirpur",
-    "value": "nith"
-  },
-  {
-    "key": 7,
-    "label": "SRMS",
-    "value": "srms"
-  }
-];
-
-export const company = [
-  {
-    "key": 0,
-    "label": "None",
-    "value": "none"
-  },
-  {
-    "key": 1,
-    "label": "DeMux",
-    "value": "demux"
-  },
-  {
-    "key": 2,
-    "label": "Microsoft",
-    "value": "microsoft"
-  },
-  {
-    "key": 3,
-    "label": "PayPal",
-    "value": "paypal"
-  },
-  {
-    "key": 4,
-    "label": "Jio",
-    "value": "jio"
-  },
-  {
-    "key": 5,
-    "label": "LinkedIn",
-    "value": "linkedin"
-  },
-  {
-    "key": 6,
-    "label": "Adobe",
-    "value": "adobe"
-  },
-  {
-    "key": 7,
-    "label": "Xebia",
-    "value": "xebia"
-  },
-  {
-    "key": 8,
-    "label": "Morgan Stanley",
-    "value": "morganstanley"
-  },
-  {
-    "key": 9,
-    "label": "Facebook",
-    "value": "facebook"
-  },
-  {
-    "key": 10,
-    "label": "Google",
-    "value": "google"
-  }
-];

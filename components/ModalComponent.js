@@ -1,11 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import ChipComponent from './ChipComponent';
 import PickerComponent from './PickerComponent';
-import{natureOfJob, typeOfInterview, college, company} from '../constantValues/FilterComponentConfig';
+import {items} from '../constantValues/FilterComponentConfig';
+import { useDispatch,useSelector } from 'react-redux';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import SectionedMultiSelect from 'react-native-sectioned-multi-select';
+import {updateFilter} from '../reducers/filter/filterActions'
+
+
 
 const Modal = () => {
+  const dispatch = useDispatch();
+  
+  const filters = useSelector(state => state.filter);
+  const [currentFilter, setCurrent] = useState([]);
+
+
+  //items => 1  currentFil => 3  newFilter=>2
+  const makeNewFilter = async (currentFil, items) => {
+    
+    const newFilter = {
+      company: [],
+      topic: [],
+      typeOfInterview: [],
+      college: [],
+      natureOfJob: []
+    };
+    
+    currentFil.forEach(id => {
+      items.forEach((o) => {
+        o.children.forEach(child => {
+          if(child.id === id){
+            newFilter[o.name].push(child.name)
+          }
+        })
+      })
+    });
+  console.log(newFilter);
+  console.log("************");
+  dispatch(updateFilter(newFilter.company, newFilter.topic, newFilter.typeOfInterview, newFilter.college, newFilter.natureOfJob));
+  console.log(filters);
+}
+
+  updateFilters = (currentFil) => {
+    console.log(filters);
+    console.log(items);
+    console.log("LODU");
+    setCurrent(currentFil);
+    console.log("kya aya" + currentFil);
+    console.log("kya bana" + currentFilter);
+    console.log('##############################');
+    makeNewFilter(currentFil,items);
+    //console.log(currentFilter);
+  }
+/* 
+  useEffect(() => {
+    console.log("hello");
+  }, [currentFilter]); */
+
+
   return (
     <View>
       <LinearGradient
@@ -15,20 +70,17 @@ const Modal = () => {
         <Text style={[styles.text, { paddingTop: 16 }]}>Filter By</Text>
         <View style={{ flexDirection: 'row', justifyContent:'flex-start', flexWrap:'wrap' }}>
           <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
-            <Text style={{color:'white'}} >Job type</Text>
-            <PickerComponent pickerValues={natureOfJob} />
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
-            <Text style={{color:'white'}} >Interview</Text>
-            <PickerComponent pickerValues={typeOfInterview} />
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
-            <Text style={{color:'white'}} >Company</Text>
-            <PickerComponent pickerValues={company} />
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
-            <Text style={{color:'white'}} >College</Text>
-            <PickerComponent pickerValues={college} />
+          <SectionedMultiSelect
+          items={items}
+          IconRenderer={Icon}
+          uniqueKey="id"
+          subKey="children"
+          selectText="Choose More Filters"
+          showDropDowns={true}
+          readOnlyHeadings={true}
+          onSelectedItemsChange={updateFilters}
+          selectedItems={currentFilter}
+        />
           </View>
         </View>
       </LinearGradient>
@@ -41,7 +93,8 @@ export default Modal;
 const styles = StyleSheet.create({
   modal: {
     height: 'auto',
-    width: 30 * 10,
+    minWidth: 300,
+    width: 'auto',
     marginRight: 25 / 5,
     borderRadius: 6,
     marginTop: 25 * 3,

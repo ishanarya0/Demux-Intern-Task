@@ -28,20 +28,29 @@ export default function App () {
 
   useEffect(() => {
     filterUse? initialiseListFiltered() : initialiseList();
-/*     console.log("HUAAA DOBARA"+ filterUse);
-    console.log(filters); */
-    dispatch(updateFilter(filters.company,filters.topic, filters.typeInterview, filters.college, filters.nature));
-/*     console.log("HO GAYA UPDATE");
-    console.log(filters); */
+    dispatch(updateFilter(filters.company,filters.topic, filters.typeOfInterview, filters.college, filters.natureOfJob));
   }, [filterUse]);
 
-function applyFilter(jso, fil){
+function applyFilterHelper(data, filters, filter){
+  var result = [];
+  console.log("LOLOLOL");
+  console.log(filters[filter]);
+  data.forEach(function (x) {
+    if(filters[filter].length > 0 && filters[filter].includes(x[filter])){
+          result.push(x); 
+    }
+});
+return filters[filter].length > 0 ? result : data;
+}
+
+
+function applyFilter(jso, filters){
     var result = [];
-    jso.forEach(function (x) {
-      if(fil.company.length > 0 && fil.company.includes(x.company)){
-            result.push(x); 
-      }
-  });
+  result = applyFilterHelper(jso, filters, 'company');
+  result = applyFilterHelper(result, filters, 'college');
+  result = applyFilterHelper(result, filters, 'typeOfInterview');
+  result = applyFilterHelper(result, filters, 'natureOfJob');
+
     return result;
   }
 
@@ -123,9 +132,11 @@ const initialiseListFiltered = async () => {
 
       <FlatList
         contentContainerStyle={styles.list}
-        ListHeaderComponent={
+        ListHeaderComponent={ 
           <View style={styles.header}>
-            <Text style={styles.title}> {filterUse? totalItemsFilter: totalItems} Items</Text>
+            <View> 
+            {filterUse && <Text style={styles.title}> {filterUse? totalItemsFilter: totalItems} Items</Text>}
+            </View>
             <Button
       onPress={() => {
         setFilterUse(!filterUse);

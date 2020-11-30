@@ -1,11 +1,11 @@
 import { FETCH_FILTER_REQUEST, UPDATE_LIST_RESULTS } from './filterTypes';
 
 const initialState = {
-  company: ['Adobe', 'Facebook','Microsoft'],
+  company: [],
   topic: [],
-  typeInterview: [],
+  typeOfInterview: [],
   college: [],
-  nature: []
+  natureOfJob: []
 };
 
 function filterReducer(state = initialState, action) {
@@ -19,9 +19,9 @@ function filterReducer(state = initialState, action) {
       return {
           company: action.company,
           topic: action.topic,
-          typeInterview: action.typeInterview,
+          typeOfInterview: action.typeOfInterview,
           college: action.college,
-          nature: action.nature
+          natureOfJob: action.natureOfJob
       };
     default:
       return state;
