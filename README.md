@@ -24,7 +24,7 @@ Check for the succesfull installation using the following commands.
 node -v
 ```
 ```sh
-npm -v.
+npm -v
 ```
 ## Install dependencies
 Install all the necessary packages using this command.
