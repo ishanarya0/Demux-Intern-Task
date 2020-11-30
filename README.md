@@ -1,6 +1,6 @@
 # Demux-Intern-Task
 
-## Silent Features
+## Salient Features
 **1. Intuitive and responsive UI (adjusts according to the screen dimensions).**\
 **2. Dots indicating difficulty of each problem.**\
 **3. Allows the feature to load as the user scrolls down.**\
