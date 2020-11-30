@@ -7,13 +7,13 @@ export function fetchFilter() {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export function updateFilter(company,topic, typeJob, college, nature) {
+export function updateFilter(company,topic, typeInterview, college, nature) {
     //dispatch(fetchFilter());
     return{
       type: UPDATE_LIST_RESULTS,
       company: company,
       topic: topic,
-      typeJob: typeJob,
+      typeInterview: typeInterview,
       college: college,
       nature : nature
     };

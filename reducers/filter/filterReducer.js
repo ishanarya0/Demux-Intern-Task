@@ -1,11 +1,11 @@
 import { FETCH_FILTER_REQUEST, UPDATE_LIST_RESULTS } from './filterTypes';
 
 const initialState = {
-  company: ['Nunnu', 'Loda'],
-  topic: ['Intresting', 'Sexy'],
-  typeJob: ['Nice'],
-  college: ['IIITG','pUSSY'],
-  nature: ['gOOD'],
+  company: ['Adobe', 'Facebook','Microsoft'],
+  topic: [],
+  typeInterview: [],
+  college: [],
+  nature: []
 };
 
 function filterReducer(state = initialState, action) {
@@ -15,14 +15,14 @@ function filterReducer(state = initialState, action) {
         ...state
       };
     case UPDATE_LIST_RESULTS:
-      const nState = Object.assign({}, state, {
+/*       console.log("HELLLO"); */
+      return {
           company: action.company,
           topic: action.topic,
-          typeJob: action.typeJob,
+          typeInterview: action.typeInterview,
           college: action.college,
           nature: action.nature
-      });
-      return nState;
+      };
     default:
       return state;
   }

@@ -1,8 +1,8 @@
 import styles from './styles';
-import { fetchResults } from './data';
+import { fetchResults,fetchResultsFilter } from './data';
 import React, { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import { FlatList, View, Text, SafeAreaView, TouchableOpacity, Image, StyleSheet} from 'react-native';
+import { Button,FlatList, View, Text, SafeAreaView, TouchableOpacity, Image, StyleSheet} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import CardComponent from './components/CardComponent';
 import { BlurView } from 'expo-blur';
@@ -19,103 +19,119 @@ export default function App () {
   const dispatch = useDispatch();
   const listItems = useSelector(state => state.list.items);
   const filters = useSelector(state => state.filter);
-  const totalItems = Array.isArray(listItems) ? listItems.length : 0;
+  const [totalItems, setTotal] = useState(0);
+  const [totalItemsFilter, setTotalFilter] = useState(0);
   const [loadingMore, setLoadingMore] = useState(false);
   const [allLoaded, setAllLoaded] = useState(false);
 
+  const [filterUse, setFilterUse] = useState(false);
 
   useEffect(() => {
-    initialiseList();
-    dispatch(fetchFilter());
-    //dispatch(updateFilter(company,topic, typeJob, college, nature));
-  }, []);
+    filterUse? initialiseListFiltered() : initialiseList();
+/*     console.log("HUAAA DOBARA"+ filterUse);
+    console.log(filters); */
+    dispatch(updateFilter(filters.company,filters.topic, filters.typeInterview, filters.college, filters.nature));
+/*     console.log("HO GAYA UPDATE");
+    console.log(filters); */
+  }, [filterUse]);
+
+function applyFilter(jso, fil){
+    var result = [];
+    jso.forEach(function (x) {
+      if(fil.company.length > 0 && fil.company.includes(x.company)){
+            result.push(x); 
+      }
+  });
+    return result;
+  }
 
   const initialiseList = async () => {
-
-    // this is done for testing purposes - reset AsyncStorage on every app refresh
     await AsyncStorage.removeItem('saved_list');
-
-    // get current persisted list items (will be null if above line is not removed)
     const curItems = await AsyncStorage.getItem('saved_list');
-
+    console.log("MAI");
+    console.log("1 "+totalItems);
+    await setTotal(0);
+    console.log("2 "+ totalItems);
     if (curItems === null) {
-      // no current items in AsyncStorage - fetch initial items
       json = fetchResults(0);
 
-      // set initial list in AsyncStorage
       await AsyncStorage.setItem('saved_list', JSON.stringify(json));
-
+      setTotal(totalItems+5);
     } else {
-      // current items exist - format as a JSON object
       json = JSON.parse(curItems);
     }
-
-    // update Redux store (Redux will ignore if `json` is same as current list items)
     dispatch({
-      type: 'UPDATE_LIST_RESULTS',
+      type: 'UPDATE_LIST',
       items: json
+    });
+  }
+
+const initialiseListFiltered = async () => {
+/*     console.log("lodu"); */
+    json = fetchResultsFilter();
+    filtered = await applyFilter(json, filters);    
+    setTotalFilter(filtered.length);
+ /*    console.log(filtered); */
+    dispatch({
+      type: 'UPDATE_LIST',
+      items: filtered
     });
   }
 
   const persistResults = async (newItems) => {
 
-    // get current persisted list items
     const curItems = await AsyncStorage.getItem('saved_list');
 
-    // format as a JSON object
     let json = curItems === null
       ? {}
       : JSON.parse(curItems);
 
-    // add new items to json object
     for (let item of newItems) {
       json.push(item);
     }
 
-    // persist updated item list
     await AsyncStorage.setItem('saved_list', JSON.stringify(json));
-
-    // update Redux store
+    console.log("NAHI MAI");
+    setTotal(totalItems+5);
     dispatch({
-      type: 'UPDATE_LIST_RESULTS',
+      type: 'UPDATE_LIST',
       items: json
     });
   }
 
   const loadMoreResults = async info => {
 
-    // if already loading more, or all loaded, return
     if (loadingMore || allLoaded)
       return
 
-    // set loading more (also updates footer text)
     setLoadingMore(true);
 
-    // get next results
     const newItems = fetchResults(totalItems);
 
-    // mimic server-side API request and delay execution for 1 second
     await delay(1000);
 
     if (newItems.length === 0) {
-      // if no new items were fetched, set all loaded to true to prevent further requests
       setAllLoaded(true);
     } else {
-      // process the newly fetched items
-      dispatch(updateFilter(company,topic, typeJob, college, nature));
       await persistResults(newItems);
     }
-    // load more complete, set loading more to false
     setLoadingMore(false);
   }
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
+
       <FlatList
         contentContainerStyle={styles.list}
         ListHeaderComponent={
           <View style={styles.header}>
-            <Text style={styles.title}>Displaying {totalItems} Items</Text>
+            <Text style={styles.title}> {filterUse? totalItemsFilter: totalItems} Items</Text>
+            <Button
+      onPress={() => {
+        setFilterUse(!filterUse);
+        }}
+      title={filterUse? "Remove Filters" : "Apply Filters"}
+      />
             <TouchableOpacity onPress={() => setisFilter(true)}>
               <Image style={{
                 height: 50,
@@ -134,7 +150,9 @@ export default function App () {
         }
         scrollEventThrottle={250}
         onEndReached={info => {
+          if(!filterUse){
           loadMoreResults(info);
+          }
         }}
         onEndReachedThreshold={0.01}
         data={listItems}

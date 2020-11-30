@@ -1204,3 +1204,17 @@ export const fetchResults = (startingId = 0) => {
   }
   return obj;
 }
+
+
+export const fetchResultsFilter = () => {
+
+  let obj = [];
+
+  for (let i = 0; i < 100; i++) {
+    if (data[i] === undefined)
+      break;
+
+    obj.push(data[i]);
+  }
+  return obj;
+}

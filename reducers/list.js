@@ -3,7 +3,7 @@ export const list = (state = {}, action) => {
   switch (action.type) {
 
     // overwrite list items with updated results 
-    case 'UPDATE_LIST_RESULTS':
+    case 'UPDATE_LIST':
 
       const nState = Object.assign({}, state, {
         items: action.items
