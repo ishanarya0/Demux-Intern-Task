@@ -1,6 +1,15 @@
 # Demux-Intern-Task
 
 ## Install Dependencies
+
+Install [Node.js](https://nodejs.org/en/download/) and npm on your machine from. 
+\\& Check for the succesfull installation using the command
+```sh
+node -v
+```
+```sh
+npm -v.
+```
 ```sh
 npm install
 ```
