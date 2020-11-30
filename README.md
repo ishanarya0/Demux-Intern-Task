@@ -7,7 +7,7 @@
 **4. In-Depth filters (company,type of interview (online-test/personal interview), college, nature of job (internship/placement)).**\
 **5. Cross-platform application build with React-native.**\
 **6. Data is populated from a file (data.js).**\
-**7. Problem topic is hidden for better learning of user.**\
+**7. Problem topic is hidden for better learning of user.**
 
 > Download [apk](https://drive.google.com/file/d/1zk5zhm6X70Y0DT67WwXTD50v4TNUHVVj/view?usp=sharing)
 
