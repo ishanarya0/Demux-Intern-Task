@@ -62,14 +62,15 @@ const Modal = () => {
 
 
   return (
-    <View>
+    <View style={{ flexDirection: 'row', justifyContent:'flex-end', marginLeft: 5}}>
       <LinearGradient
         colors={['#240704', 'black', 'black']}
         style={styles.modal}
       >
-        <Text style={[styles.text, { paddingTop: 16 }]}>Filter By</Text>
         <View style={{ flexDirection: 'row', justifyContent:'flex-start', flexWrap:'wrap' }}>
-          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5}}>
+          <View style={{ flexDirection: 'row', justifyContent:'flex-start', marginLeft: 5, flexWrap:'wrap'}}>
+            
+          <Text style={[styles.text, { paddingTop: 16 }]}>Select a filter</Text>
           <SectionedMultiSelect
           items={items}
           IconRenderer={Icon}
@@ -103,10 +104,10 @@ const styles = StyleSheet.create({
     padding: 25 / 5,
   },
   text: {
-    color: '#FCBE02',
+    color: 'white',
     padding: 25 / 5,
     paddingLeft: 25 / 2,
-    fontSize: 14 * 0.85,
+    fontSize: 16,
     fontWeight: 'bold',
   },
   show: {

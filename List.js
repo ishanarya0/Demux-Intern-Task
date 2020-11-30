@@ -28,8 +28,8 @@ export default function App () {
 
   useEffect(() => {
     filterUse? initialiseListFiltered() : initialiseList();
-    dispatch(updateFilter(filters.company,filters.topic, filters.typeOfInterview, filters.college, filters.natureOfJob));
-  }, [filterUse]);
+    //dispatch(updateFilter(filters.company,filters.topic, filters.typeOfInterview, filters.college, filters.natureOfJob));
+  }, [filterUse, filters]);
 
 function applyFilterHelper(data, filters, filter){
   var result = [];
@@ -52,6 +52,10 @@ function applyFilter(jso, filters){
   result = applyFilterHelper(result, filters, 'natureOfJob');
 
     return result;
+  }
+
+  function clearfilter(){
+    dispatch(updateFilter([],[],[],[],[]));
   }
 
   const initialiseList = async () => {
@@ -133,17 +137,18 @@ const initialiseListFiltered = async () => {
       <FlatList
         contentContainerStyle={styles.list}
         ListHeaderComponent={ 
-          <View style={styles.header}>
-            <View> 
-            {filterUse && <Text style={styles.title}> {filterUse? totalItemsFilter: totalItems} Items</Text>}
-            </View>
+          <View style={styles.header}> 
+            {filterUse && <View>
+            <Text style={styles.title}> {filterUse? totalItemsFilter: totalItems} Items</Text>
             <Button
-      onPress={() => {
-        setFilterUse(!filterUse);
-        }}
-      title={filterUse? "Remove Filters" : "Apply Filters"}
-      />
-            <TouchableOpacity onPress={() => setisFilter(true)}>
+              onPress={() => {
+              setFilterUse(false);
+              clearfilter();
+            }}
+            title={"Remove Filters"}
+            />
+            </View>}
+            <TouchableOpacity onPress={() => {setisFilter(true); setFilterUse(true);}}>
               <Image style={{
                 height: 50,
                 width: 50,
@@ -161,7 +166,7 @@ const initialiseListFiltered = async () => {
         }
         scrollEventThrottle={250}
         onEndReached={info => {
-          if(!filterUse){
+          if(filterUse==false){
           loadMoreResults(info);
           }
         }}
@@ -189,7 +194,7 @@ const initialiseListFiltered = async () => {
       {isFilter && (
         <BlurView
           intensity={100}
-          style={[StyleSheet.absoluteFill, { justifyContent: 'center' }]}
+          style={[StyleSheet.absoluteFill, { justifyContent: 'center', backgroundColor: 'red' }]}
           tint="dark"
         >
           <FilterComponent isFilter={isFilter} setisFilter={setisFilter} />

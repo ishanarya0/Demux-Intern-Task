@@ -9,7 +9,7 @@ export const data = [
     "company": "Microsoft",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Hyderabad",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 95.633,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -21,7 +21,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, Delhi",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 91.045,
     "description": "Invert a binary tree."
   },
@@ -33,7 +33,7 @@ export const data = [
     "company": "Jio",
     "typeOfInterview": "Online Test",
     "college": "IIT, BHU",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 85.653,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -45,7 +45,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 78.868,
     "description": "Invert a binary tree."
   },
@@ -57,7 +57,7 @@ export const data = [
     "company": "Microsoft",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 90.878,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -69,7 +69,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 85.775,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -81,7 +81,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Guwahati",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 95.694,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -93,7 +93,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Online Test",
     "college": "IIT, BHU",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 93.01,
     "description": "Invert a binary tree."
   },
@@ -105,7 +105,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 90.904,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -117,7 +117,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Personal Interview",
     "college": "NIT, Hamirpur",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 80.601,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -129,7 +129,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Guwahati",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 78.764,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -141,7 +141,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Guwahati",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 78.945,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -153,7 +153,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 97.987,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -165,7 +165,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Online Test",
     "college": "IIT, Roorkee",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 93.029,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -177,7 +177,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Online Test",
     "college": "IIT, Delhi",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 92.949,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -189,7 +189,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 97.964,
     "description": "Invert a binary tree."
   },
@@ -201,7 +201,7 @@ export const data = [
     "company": "Google",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Hyderabad",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 90.054,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -213,7 +213,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Personal Interview",
     "college": "NIT, Hamirpur",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 92.935,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -225,7 +225,7 @@ export const data = [
     "company": "Jio",
     "typeOfInterview": "Online Test",
     "college": "IIT, BHU",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 92.981,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -237,7 +237,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 80.298,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -249,7 +249,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 79.954,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -261,7 +261,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 91.085,
     "description": "Invert a binary tree."
   },
@@ -273,7 +273,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 90.885,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -285,7 +285,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Online Test",
     "college": "NIT, Hamirpur",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 93.122,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -297,7 +297,7 @@ export const data = [
     "company": "Jio",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 79.015,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -309,7 +309,7 @@ export const data = [
     "company": "Microsoft",
     "typeOfInterview": "Online Test",
     "college": "IIT, Delhi",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 95.772,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -321,7 +321,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 85.925,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -333,7 +333,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Hyderabad",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 78.718,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -345,7 +345,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Hyderabad",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 95.597,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -357,7 +357,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 95.611,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -369,7 +369,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 95.574,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -381,7 +381,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Hyderabad",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 86.063,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -393,7 +393,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 90.846,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -405,7 +405,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, Roorkee",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 91.025,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -417,7 +417,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "NIT, Hamirpur",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 95.558,
     "description": "Invert a binary tree."
   },
@@ -429,7 +429,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, BHU",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 93.44,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -441,7 +441,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 98.182,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -453,7 +453,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Hyderabad",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 92.987,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -465,7 +465,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 79.841,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -477,7 +477,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Online Test",
     "college": "NIT, Hamirpur",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 79.886,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -489,7 +489,7 @@ export const data = [
     "company": "Microsoft",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, BHU",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 86.002,
     "description": "Invert a binary tree."
   },
@@ -501,7 +501,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 90.858,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -513,7 +513,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 80.321,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -525,7 +525,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Guwahati",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 78.753,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -537,7 +537,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Personal Interview",
     "college": "NIT, Hamirpur",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 80.131,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -549,7 +549,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Online Test",
     "college": "IIT, BHU",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 97.598,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -561,7 +561,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Online Test",
     "college": "IIT, Delhi",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 97.602,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -573,7 +573,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 78.972,
     "description": "Invert a binary tree."
   },
@@ -585,7 +585,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, Delhi",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 78.883,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -597,7 +597,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 86.077,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -609,7 +609,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 78.894,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -621,7 +621,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, BHU",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 78.953,
     "description": "description"
   },
@@ -633,7 +633,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Personal Interview",
     "college": "NIT, Hamirpur",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 80.235,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -645,7 +645,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Guwahati",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 80.456,
     "description": "Invert a binary tree."
   },
@@ -657,7 +657,7 @@ export const data = [
     "company": "Google",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 79.009,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -669,7 +669,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, Roorkee",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 95.744,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -681,7 +681,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, BHU",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 90.785,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -693,7 +693,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Online Test",
     "college": "IIT, BHU",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 89.964,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -705,7 +705,7 @@ export const data = [
     "company": "Microsoft",
     "typeOfInterview": "Personal Interview",
     "college": "SRMS",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 89.77,
     "description": "Invert a binary tree."
   },
@@ -717,7 +717,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 95.574,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -729,7 +729,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Online Test",
     "college": "IIT, Delhi",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 90.894,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -741,7 +741,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Guwahati",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 95.651,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -753,7 +753,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Guwahati",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 97.988,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -765,7 +765,7 @@ export const data = [
     "company": "Google",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Hyderabad",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 95.754,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -777,7 +777,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 85.956,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -789,7 +789,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 89.997,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -801,7 +801,7 @@ export const data = [
     "company": "Jio",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Guwahati",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 89.826,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -813,7 +813,7 @@ export const data = [
     "company": "Microsoft",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 97.911,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -825,7 +825,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 89.995,
     "description": "Invert a binary tree."
   },
@@ -837,7 +837,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Online Test",
     "college": "NIT, Hamirpur",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 80.608,
     "description": "Invert a binary tree."
   },
@@ -849,7 +849,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 90.024,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -861,7 +861,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 85.824,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -873,7 +873,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, Roorkee",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 90.79,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -885,7 +885,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Guwahati",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 90.782,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -897,7 +897,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Hyderabad",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 98.102,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -909,7 +909,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 93.021,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -921,7 +921,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Guwahati",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 89.737,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -933,7 +933,7 @@ export const data = [
     "company": "Google",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 79.908,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -945,7 +945,7 @@ export const data = [
     "company": "Google",
     "typeOfInterview": "Personal Interview",
     "college": "SRMS",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 92.941,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -957,7 +957,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Online Test",
     "college": "IIT, BHU",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 79.781,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -969,7 +969,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Online Test",
     "college": "IIT, Delhi",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 93.045,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -981,7 +981,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 85.807,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -993,7 +993,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 78.762,
     "description": "Invert a binary tree."
   },
@@ -1005,7 +1005,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 80.138,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -1017,7 +1017,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 90.837,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -1029,7 +1029,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, BHU",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 91.034,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -1041,7 +1041,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "IIIT, Una",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 85.589,
     "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character"
   },
@@ -1053,7 +1053,7 @@ export const data = [
     "company": "DeMux",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 90.034,
     "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
   },
@@ -1065,7 +1065,7 @@ export const data = [
     "company": "LinkedIn",
     "typeOfInterview": "Online Test",
     "college": "IIT, BHU",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 85.688,
     "description": "Invert a binary tree."
   },
@@ -1077,7 +1077,7 @@ export const data = [
     "company": "Google",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 95.54,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -1089,7 +1089,7 @@ export const data = [
     "company": "Microsoft",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Hyderabad",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 80.696,
     "description": "Invert a binary tree."
   },
@@ -1101,7 +1101,7 @@ export const data = [
     "company": "Xebia",
     "typeOfInterview": "Personal Interview",
     "college": "NIT, Hamirpur",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 90.8,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -1113,7 +1113,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Personal Interview",
     "college": "NIT, Hamirpur",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 85.941,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -1125,7 +1125,7 @@ export const data = [
     "company": "Adobe",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, BHU",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 95.605,
     "description": "Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: \"a==b\" or \"a!=b\".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.\n\nReturn true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations."
   },
@@ -1137,7 +1137,7 @@ export const data = [
     "company": "PayPal",
     "typeOfInterview": "Personal Interview",
     "college": "IIT, Roorkee",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 95.6,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -1149,7 +1149,7 @@ export const data = [
     "company": "Google",
     "typeOfInterview": "Online Test",
     "college": "IIIT, Una",
-    "type": "Full Time",
+    "natureOfJob": "Full Time",
     "score": 85.539,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -1161,7 +1161,7 @@ export const data = [
     "company": "Facebook",
     "typeOfInterview": "Online Test",
     "college": "IIT, Roorkee",
-    "type": "Part Time",
+    "natureOfJob": "Part Time",
     "score": 90.054,
     "description": "Implement a trie with insert, search, and startsWith methods."
   },
@@ -1173,7 +1173,7 @@ export const data = [
     "company": "Jio",
     "typeOfInterview": "Online Test",
     "college": "SRMS",
-    "type": "Internship",
+    "natureOfJob": "Internship",
     "score": 97.838,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   },
@@ -1185,7 +1185,7 @@ export const data = [
     "company": "Morgan Stanley",
     "typeOfInterview": "Online Test",
     "college": "IIT, Roorkee",
-    "type": "Trainee",
+    "natureOfJob": "Trainee",
     "score": 90.997,
     "description": "Given two strings text1 and text2, return the length of their longest common subsequence.\n\nA subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, \"ace\" is a subsequence of \"abcde\" while \"aec\" is not). A common subsequence of two strings is a subsequence that is common to both strings"
   }
