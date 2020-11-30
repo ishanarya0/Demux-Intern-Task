@@ -38,7 +38,7 @@ node start
 ```
 ## Install expo App
 
-Install "expo" app on your device or emulator to access the project.
+Install "expo" app on your device or emulator to access the project. You neet to connect your machine and mobile device to the same network.
 
 #### Data is hypothetical
 
