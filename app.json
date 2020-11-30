@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rn-load-more",
-    "slug": "rn-load-more",
+    "name": "Demux Academy",
+    "slug": "My-Demux",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,7 +23,7 @@
       "favicon": "./assets/favicon.png"
     },
     "android": {
-      "package": "com.ishanarya0.rnloadmore"
+      "package": "com.ishanarya0.demux"
     }
   }
 }

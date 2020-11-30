@@ -6,9 +6,7 @@ export function fetchFilter() {
   };
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export function updateFilter(company,topic, typeOfInterview, college, natureOfJob) {
-    //dispatch(fetchFilter());
     return{
       type: UPDATE_LIST_RESULTS,
       company: company,

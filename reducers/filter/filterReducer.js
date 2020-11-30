@@ -15,7 +15,6 @@ function filterReducer(state = initialState, action) {
         ...state
       };
     case UPDATE_LIST_RESULTS:
-/*       console.log("HELLLO"); */
       return {
           company: action.company,
           topic: action.topic,

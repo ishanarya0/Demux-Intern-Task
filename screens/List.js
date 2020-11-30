@@ -1,19 +1,20 @@
-import styles from './styles';
-import { fetchResults,fetchResultsFilter } from './data';
+import styles from '../styles';
+import { fetchResults,fetchResultsFilter } from '../data';
 import React, { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Button,FlatList, View, Text, SafeAreaView, TouchableOpacity, Image, StyleSheet} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
-import CardComponent from './components/CardComponent';
+import CardComponent from '../components/CardComponent';
 import { BlurView } from 'expo-blur';
-import FilterComponent from './components/FilterComponent';
+import FilterComponent from '../components/FilterComponent';
 import delay from 'delay';
-import {fetchFilter, updateFilter} from './reducers/filter/filterActions';
+import {updateFilter} from '../reducers/filter/filterActions';
 import { useNavigation } from '@react-navigation/native';
 
 export default function listFun () {
   const icons = {
-    filter_btn: require('./assets/filter3.png'),
+    filter_btn: require('../assets/filter3.png'),
+    header: require('../assets/header.png'),
   };
 
   const [isFilter, setisFilter] = useState(false);
@@ -27,15 +28,12 @@ export default function listFun () {
   const navigation = useNavigation();
   const [filterUse, setFilterUse] = useState(false);
 
-  useEffect(() => {
+useEffect(() => {
     filterUse? initialiseListFiltered() : initialiseList();
-    //dispatch(updateFilter(filters.company,filters.topic, filters.typeOfInterview, filters.college, filters.natureOfJob));
   }, [filterUse, filters]);
 
-function applyFilterHelper(data, filters, filter){
+const applyFilterHelper = (data, filters, filter) => {
   var result = [];
-  console.log("LOLOLOL");
-  console.log(filters[filter]);
   data.forEach(function (x) {
     if(filters[filter].length > 0 && filters[filter].includes(x[filter])){
           result.push(x); 
@@ -44,8 +42,7 @@ function applyFilterHelper(data, filters, filter){
 return filters[filter].length > 0 ? result : data;
 }
 
-
-function applyFilter(jso, filters){
+const applyFilter = (jso, filters) => {
     var result = [];
   result = applyFilterHelper(jso, filters, 'company');
   result = applyFilterHelper(result, filters, 'college');
@@ -55,20 +52,16 @@ function applyFilter(jso, filters){
     return result;
   }
 
-  function clearfilter(){
+const clearfilter = () => {
     dispatch(updateFilter([],[],[],[],[]));
   }
 
-  const initialiseList = async () => {
+const initialiseList = async () => {
     await AsyncStorage.removeItem('saved_list');
     const curItems = await AsyncStorage.getItem('saved_list');
-    console.log("MAI");
-    console.log("1 "+totalItems);
-    await setTotal(0);
-    console.log("2 "+ totalItems);
+    setTotal(0);
     if (curItems === null) {
       json = fetchResults(0);
-
       await AsyncStorage.setItem('saved_list', JSON.stringify(json));
       setTotal(totalItems+5);
     } else {
@@ -81,18 +74,16 @@ function applyFilter(jso, filters){
   }
 
 const initialiseListFiltered = async () => {
-/*     console.log("lodu"); */
     json = fetchResultsFilter();
     filtered = await applyFilter(json, filters);    
     setTotalFilter(filtered.length);
- /*    console.log(filtered); */
     dispatch({
       type: 'UPDATE_LIST',
       items: filtered
     });
   }
 
-  const persistResults = async (newItems) => {
+const persistResults = async (newItems) => {
 
     const curItems = await AsyncStorage.getItem('saved_list');
 
@@ -105,7 +96,6 @@ const initialiseListFiltered = async () => {
     }
 
     await AsyncStorage.setItem('saved_list', JSON.stringify(json));
-    console.log("NAHI MAI");
     setTotal(totalItems+5);
     dispatch({
       type: 'UPDATE_LIST',
@@ -139,7 +129,7 @@ const initialiseListFiltered = async () => {
         contentContainerStyle={styles.list}
         ListHeaderComponent={ 
           <View style={styles.header}> 
-            {filterUse && <View>
+            {filterUse && <View >
             <Text style={styles.title}> {filterUse? totalItemsFilter: totalItems} Items</Text>
             <Button
               onPress={() => {
@@ -149,6 +139,12 @@ const initialiseListFiltered = async () => {
             title={"Remove Filters"}
             />
             </View>}
+            {!filterUse && <Image style={{
+              height: 50,
+              width: 300,
+            }}
+              source={icons.header}
+            />}
             <TouchableOpacity onPress={() => {setisFilter(true); setFilterUse(true);}}>
               <Image style={{
                 height: 50,
@@ -199,7 +195,7 @@ const initialiseListFiltered = async () => {
       {isFilter && (
         <BlurView
           intensity={100}
-          style={[StyleSheet.absoluteFill, { justifyContent: 'center', backgroundColor: 'red' }]}
+          style={[StyleSheet.absoluteFill, { justifyContent: 'center' }]}
           tint="dark"
         >
           <FilterComponent isFilter={isFilter} setisFilter={setisFilter} />

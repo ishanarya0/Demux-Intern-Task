@@ -1,10 +1,11 @@
 import { Button, View, Image, Text, StyleSheet } from 'react-native';
 import React, { useState } from 'react';
+
 export default function questionDetails ({ route }) {
   result = route.params.item;
   const icons = {
-    star_100: require('./assets/rating_star_100.png'),
-    star_0: require('./assets/rating_star_0.png'),
+    star_100: require('../assets/rating_star_100.png'),
+    star_0: require('../assets/rating_star_0.png'),
   };
   const stars = [];
 
