@@ -40,6 +40,7 @@ node start
 
 Install "expo" app on your device or emulator to access the project.
 
+#### Data is hypothetical
 
 
 
