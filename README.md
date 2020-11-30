@@ -18,7 +18,7 @@
 
 ## Install Node.js and npm
 
-Install [Node.js](https://nodejs.org/en/download/) and npm on your machine from. 
+Install [Node.js](https://nodejs.org/en/download/) and npm on your machine. 
 Check for the succesfull installation using the following commands.
 ```sh
 node -v
